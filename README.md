@@ -47,7 +47,7 @@ Get value of your portfolio(default currency is USD)
 Get quantity of coins of a specific crypto
 
 ```php
-    $blockfolio->getPortfolioValue('USD')
+    $blockfolio->getQuantity('USD')
 ```
 
 <br>
