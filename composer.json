@@ -1,0 +1,23 @@
+{
+  "name": "jojothebandit/BlockfolioSDK",
+  "description": "Unofficial SDK for manipulation blockfolio numbers",
+  "type": "library",
+  "keywords": ["blockfolio", "btc", "bitcoin"],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4"
+  },
+  "authors": [
+    {
+      "name": "Tony Mrakovcic",
+      "email": "tony.mrakovcic@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload" : {
+     "psr-0": {
+       "jojothebandit\\BlockfolioSDK": "src/"
+     }
+   },
+  "minimum-stability": "dev"
+}
