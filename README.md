@@ -11,12 +11,12 @@ I will try to keep up and fix stuff if it breaks, but I am not promising anythin
 
 # How to install (Composer)
 
-    composer require jojothebandit/blockfolioSDK
+    composer require jojothebandit/blockfolio-sdk
     
 or add to your project's composer.json
 
     "require": {
-        "jojothebandit/blockfolioSDK": "~1.0"
+        "jojothebandit/blockfolio-sdk": "~1.0"
     }
 
 # How to use
