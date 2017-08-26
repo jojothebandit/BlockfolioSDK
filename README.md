@@ -2,7 +2,7 @@
 <br />
 A php wrapper around some Blockfolio requests
 <br>
-Now you can edit your crypto values in the app though this little SDK
+Now you can edit your crypto values in the app through this little SDK
 <br>
 DISCLAIMER: Since this is totally unofficial it can stop working at any time
 <br>
