@@ -1,6 +1,6 @@
 {
   "name": "jojothebandit/blockfolio-sdk",
-  "description": "Unofficial SDK for manipulation blockfolio numbers",
+  "description": "Unofficial SDK for manipulation of cryptocurrency values in the blockfolio app",
   "type": "library",
   "keywords": ["blockfolio", "btc", "bitcoin"],
   "license": "MIT",
