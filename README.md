@@ -78,6 +78,20 @@ Make a trade, does two transactions, removes x of the first crypto, and adds y o
 ```
 
 <br>
+Find the exchange rate between two cryptos, mostly goes one way, BTC being the source crypto
+
+```php
+    $blockfolio->getExchangeRate('BTC', 'ETH');
+```
+
+<br>
+You can set the exchange with
+
+```php
+    $blockfolio->setExchangeName('poloniex');
+```
+
+<br>
 You can internally set the source and destination crypto
 
 ```php

@@ -201,7 +201,11 @@ class BlockfolioSDKBase
             $blockfolio->setClientID($this->getClientId());
             $blockfolio->setAction('exchangeList');
             $result = $blockfolio->apiRequest();
-            $this->exchangeName = $result['exchange'][0];
+            if (empty($result['exchange'])){
+                throw new Exception('Couldn\'t find an exchange for ' . $this->getSourceCrypto() . '-' .  $this->getDestinationCrypto() . ', try to swap your parameters');
+            } else {
+                $this->exchangeName = $result['exchange'][0];
+            }
         }
         return $this->exchangeName;
     }
@@ -332,7 +336,7 @@ class BlockfolioSDKBase
     /**
      * @param float $exchangeRate
      */
-    public function setExchangeRate($exchangeRate) {
+    protected function setExchangeRate($exchangeRate) {
         $this->exchangeRate = $exchangeRate;
     }
 
@@ -406,8 +410,12 @@ class BlockfolioSDKBase
     /**
      * @return string
      */
-    public function getExchangeRate() {
+    public function getExchangeRate($source = null, $destination = null)
+    {
         if ($this->exchangeRate === null){
+            $this->setSourceCrypto($source);
+            $this->setDestinationCrypto($destination);
+
             $this->calculateExchangeRate();
         }
         return $this->exchangeRate;
