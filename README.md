@@ -11,7 +11,7 @@ I will try to keep up and fix stuff if it breaks, but I am not promising anythin
 
 # How to install (Composer)
 
-    composer require jojothebandit/blockfolio-sdk
+    composer require "jojothebandit/blockfolio-sdk":"dev-master"
     
 or add to your project's composer.json
 
