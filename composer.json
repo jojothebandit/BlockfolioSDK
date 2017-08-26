@@ -1,5 +1,5 @@
 {
-  "name": "jojothebandit/BlockfolioSDK",
+  "name": "jojothebandit/blockfolio-sdk",
   "description": "Unofficial SDK for manipulation blockfolio numbers",
   "type": "library",
   "keywords": ["blockfolio", "btc", "bitcoin"],
